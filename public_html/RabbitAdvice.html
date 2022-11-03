@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RabbitDevice</title>
+        <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8"/>
+        <link rel = "stylesheet" href = "css/bootstrap.min.css">
+        <script src = "js/bootstrap.min.js"></script>
+        <script src = "js/bootstrap.bundle.js"></script>
+        <!-- แก้ภาษาไทยเพี้ยน -->
+        <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8"/>  
+        <!-- Style.css -->
+        <link rel = "stylesheet" href = "style.css">        
+        <link rel = "stylesheet" href = "border.css">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <h1 class = "alert alert-warning d-flex justify-content-center"><---- คำแนะนำในการเลี้ยงกระต่าย ----></h1>
+    </head>
+    <body>
+        <section class = "container d-flex justify-content-end mt-5 mb-2"></section>
+        <!-- ตารางสำหรับแสดงข้อมูล -->
+        <section id="box" class = "gradient-border container h4 mb-5">
+            <section>
+                <div class = "bg-white">
+                    <table class = "mx-5">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div style="border-left: 1px #CCCCCC solid; font-weight: bold; font-size: 18px;"></div>
+                                </td>
+                            </tr>
+
+                            
+                                <tr>
+                                    <td class = "text-center">ห้ามจับหูกระต่าย</td>       
+                                </tr>
+                                <tr>
+                                    <td class = "text-center"><img src="data:image/jpeg;base64,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" alt="ห้ามจับหูกระต่าย" width="400" height="250"/></td>        
+                                </tr>
+
+                                <tr>
+                                    <td class = "text-center">กระต่ายจะเจ็บมาก หากเราจับที่หูกระต่ายแรง ๆ</td>
+                                </tr>
+
+
+                                
+                                <tr>
+                                    <td class = "text-center">ระวัง Heatstroke</td>
+                                </tr>
+
+                                <tr>
+                                    <td class = "text-center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2GbT_M4yw-RaFZVSy6sJwz6V7PxrRECumkg&usqp=CAU" alt="Heatstroke" width="400" height="250"/></td>  
+                                </tr>
+
+                                <tr>
+                                    <td class = "text-center">ในฤดูร้อนมีกระต่ายจำนวนมากตายเพราะ Heatstroke ดังนั้นควรทำให้กระต่ายของเราเย็นสบายอยู่เสมอ</td>
+                                </tr>
+                            
+
+
+                                <tr>
+                                    <td class = "text-center">อย่าให้อาหารเม็ดเยอะไป</td>
+                                </tr>
+
+                                <tr>
+                                    <td class = "text-center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ufi9El5BKfwwngkp8cfRNVO-m5WRD6h0kA&usqp=CAU" alt="อย่าให้อาหารเม็ดเยอะไป" width="400" height="250"/></td>  
+                                </tr>
+
+                                <tr>
+                                    <td class = "text-center">การให้อาหารเม็ดเยอะเกินไป หรือให้อาหารเม็ลที่ไม่ได้มาตรฐานจะทำให้กระต่ายท้องเสียหรือได้รับสารอาหารไม่ครบได้</td>
+                                </tr>
+                                
+                        </tbody>
+                    </table>
+                    <!-- Button -->
+                    <div class = "mt-5 d-flex flex-row-reverse">
+                        <a href="index.html" class="btn btn-lg btn-primary border-2 border-dark rounded-3" role="button">ย้อนกลับ</a>
+                    </div> 
+                </div>
+            </section>
+        </section> 
+
+        
+          
+    </body>
+</html>
